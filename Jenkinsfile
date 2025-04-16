@@ -1,5 +1,7 @@
 pipeline{
-  agent any
+  agent{
+    label 'java_node'
+  }
   stages{
     stage('print info'){
       steps{
